@@ -26,6 +26,6 @@ set(CMAKE_MAP_IMPORTED_CONFIG_RELWITHDEBINFO "RelWithDebInfo;Release;")
 set(CMAKE_MAP_IMPORTED_CONFIG_MINSIZEREL "MinSizeRel;Release;RelWithDebInfo;")
 
 enable_testing()
-find_package(gtest REQUIRED)
+find_package(GTest REQUIRED)
 
 add_subdirectory(cpp20_modules)
