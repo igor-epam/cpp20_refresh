@@ -1,0 +1,4 @@
+set(TARGET tests)
+add_executable(${TARGET} tests.cpp)
+target_link_libraries(${TARGET} PRIVATE lib GTest::gtest GTest::gtest_main)
+add_test(NAME ${TARGET} COMMAND ${TARGET})
