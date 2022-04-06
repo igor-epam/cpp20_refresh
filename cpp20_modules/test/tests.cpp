@@ -1,8 +1,7 @@
+#include <gtest/gtest.h>
 
-//#include <gtest/gtest.h>
+import math;
 
-import math_module;
+TEST(module_a, a) { ASSERT_EQ(2, math::sqrt(4)); }
 
-// TEST(module_a, a) { func(); }
-
-int main(int argc, char **argv) { return (2 == math::sqrt(4)) ? 0 : 1; }
+// int main(int argc, char **argv) { return (2 == math::sqrt(4)) ? 0 : 1; }

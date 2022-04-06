@@ -24,7 +24,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 ARG USERNAME=vscode
 
-RUN pip3 install conan 
+RUN pip3 install conan
 
 # Install vcpkg itself: https://github.com/microsoft/vcpkg/blob/master/README.md#quick-start-unix
 #COPY base-scripts/install-vcpkg.sh /tmp/

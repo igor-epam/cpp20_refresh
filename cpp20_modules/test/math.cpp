@@ -3,8 +3,8 @@ module;
 #include <cmath>
 #include <iostream>
 
-module math_module;
+export module math;
 
 namespace math {
-double sqrt(double value) { return std::sqrt(value); }
+export double sqrt(double value) { return std::sqrt(value); }
 } // namespace math

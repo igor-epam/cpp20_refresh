@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.8)
 
 project("cpp20_refresh")
-
 set(CMAKE_CXX_STANDARD 20)
-add_compile_options(-std=c++20 -fmodules-ts)
+add_compile_options(-std=c++2a -fmodules-ts)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_program(CONAN_PROGRAM "conan")
