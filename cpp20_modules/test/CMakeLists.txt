@@ -2,12 +2,11 @@ set(TARGET tests)
 add_custom_target(
   std_modules ALL
   COMMAND ${CMAKE_COMMAND} -E echo "Building standard library modules"
-  COMMAND g++ -fmodules-ts -std=c++20 -c -x c++-system-header iostream
-  COMMAND g++ -fmodules-ts -std=c++20 -c -x c++-system-header cmath
-  COMMAND g++ -fmodules-ts -std=c++20 -c -x c++-system-header cstdlib)
+  COMMAND g++ -fmodules-ts -std=c++20 -c -x c++-system-header iostream cmath
+          cstdlib string_view)
 
 add_executable(${TARGET})
-target_sources(${TARGET} PRIVATE math.cpp tests.cpp)
+target_sources(${TARGET} PRIVATE math.cpp tests.cpp strings.cpp strings.cxx)
 target_link_libraries(
   ${TARGET} PRIVATE lib # linking gtest causes segfault GTest::gtest
                         # GTest::gtest_main
