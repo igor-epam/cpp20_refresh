@@ -6,7 +6,7 @@ add_custom_target(
           cstdlib string_view)
 
 add_executable(${TARGET})
-target_sources(${TARGET} PRIVATE math.cpp tests.cpp strings.cpp strings.cxx)
+target_sources(${TARGET} PRIVATE strings.cpp strings.cxx math.cpp tests.cpp)
 target_link_libraries(
   ${TARGET} PRIVATE lib # linking gtest causes segfault GTest::gtest
                         # GTest::gtest_main
