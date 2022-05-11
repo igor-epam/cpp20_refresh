@@ -32,3 +32,4 @@ enable_testing()
 find_package(GTest REQUIRED)
 
 add_subdirectory(cpp20_modules)
+add_subdirectory(cpp20_concepts)
